@@ -25,3 +25,9 @@ Searched, in this order of preference:
 ## Building
 Set `BeatSaberDir` in `Unicoder.csproj.user`, then build.
 References: `0Harmony` and the Unity modules.
+
+## AI Usage Disclaimer
+Some parts of this mod were coded with the assistance of Claude's Sonnet 5.5 model, those being:
+- This README
+- The font index that reads installed fonts' character tables to find fonts for missing characters
+- The Harmony patches
