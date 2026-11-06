@@ -9,7 +9,7 @@
     <GameVersion>1.44.1</GameVersion>
     <Description>Adds support for unicode characters anywhere in the game</Description>
     <!--<PluginIcon></PluginIcon>-->
-    <!--<ProjectSource></ProjectSource>-->
+    <ProjectSource>https://github.com/RyleeeeeUwU/Unicoder</ProjectSource>
     <ProjectHome>https://ryleeeee.xyz</ProjectHome>
   </PropertyGroup>
 
