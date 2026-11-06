@@ -33,3 +33,5 @@ Some parts of this mod were coded with the assistance of Claude's Sonnet 5.5 mod
 - This README
 - The font index that reads installed fonts' character tables to find fonts for missing characters
 - The Harmony patches
+
+Most of the mod was coded by hand, and I have personally reviewed every single line of generated code. AI was exclusively used as an assistance for stuff I had never touched before :3
