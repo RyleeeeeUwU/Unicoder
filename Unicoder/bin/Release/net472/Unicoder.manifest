@@ -1,0 +1,18 @@
+{
+   "$schema" : "https://raw.githubusercontent.com/bsmg/BSIPA-MetadataFileSchema/master/Schema.json",
+   "id" : "Unicoder",
+   "name" : "Unicoder",
+   "author" : "Ryleeeee",
+   "version" : "1.0.0",
+   "gameVersion" : "1.44.1",
+   "description" : "Adds support for unicode characters anywhere in the game",
+   "dependsOn" : {
+      "BSIPA" : "^4.3.0"
+   },
+   "links" : {
+      "project-home" : "https://ryleeeee.xyz"
+   },
+   "misc" : {
+      "generated-by" : "BSMT.Tasks/2.0.0.0"
+   }
+}

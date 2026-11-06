@@ -1,0 +1,27 @@
+# Unicoder
+
+PC Beat Saber mod that makes every ingame text able to show any unicode character.
+When the game's own font has no glyph for a character, the mod draws it with another font.
+
+Works on every ingame text, basegame or modded. Anywehere TextMeshPro is used.
+
+## How it works
+1. A background thread indexes the font files on the machine.
+2. When text containing a character the text's font lacks is set, the best installed font that has the
+   character is loaded as a *dynamic* TMP font asset and added to TMP's global fallback chain.
+   TMP then renders missing characters from that font (glyphs are rasterised on demand).
+3. Harmony prefixes on `TMP_Text.text` / `SetText` do this before layout (no flicker); TMP's
+   `TEXT_CHANGED_EVENT` is a safety net for other ways to set text (text is rebuilt next frame).
+
+## Fonts
+Searched, in this order of preference:
+1. Custom fonts manually dropped in `UserData/Unicoder/Fonts/`
+2. OS fonts reported by Unity
+
+## Limitations (TextMeshPro, not this mod)
+- Emoji are drawn as monochrome outlines.
+- Zero-width joiners / variation selectors are stripped from text so they don't show as boxes.
+
+## Building
+Set `BeatSaberDir` in `Unicoder.csproj.user`, then build.
+References: `0Harmony` and the Unity modules.

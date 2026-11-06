@@ -1,0 +1,15 @@
+{
+   "$schema" : "https://raw.githubusercontent.com/bsmg/BSIPA-MetadataFileSchema/master/Schema.json",
+   "id" : "Unicoder",
+   "name" : "Unicoder",
+   "author" : "Ryleeeee",
+   "version" : "0.1.0",
+   "gameVersion" : "1.39.1",
+   "description" : "Draws any Unicode character everywhere in the game (song names, HitScoreVisualizer, UI) by falling back to other fonts when the game font lacks a glyph.",
+   "dependsOn" : {
+      "BSIPA" : "^4.3.0"
+   },
+   "misc" : {
+      "generated-by" : "BSMT.Tasks/2.0.0.0"
+   }
+}

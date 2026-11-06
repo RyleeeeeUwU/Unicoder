@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- This file contains project properties used by the build. -->
+<Project>
+  <PropertyGroup>
+    <PluginId>Unicoder</PluginId>
+    <PluginName>Unicoder</PluginName>
+    <Authors>Ryleeeee</Authors>
+    <Version>1.0.0</Version>
+    <GameVersion>1.44.1</GameVersion>
+    <Description>Adds support for unicode characters anywhere in the game</Description>
+    <!--<PluginIcon></PluginIcon>-->
+    <!--<ProjectSource></ProjectSource>-->
+    <ProjectHome>https://ryleeeee.xyz</ProjectHome>
+  </PropertyGroup>
+
+  <!-- Plugin Dependencies -->
+  <ItemGroup>
+    <DependsOn Include="BSIPA" Version="^4.3.0"/>
+  </ItemGroup>
+  
+  <PropertyGroup>
+    <BSMTProjectType>BSIPA</BSMTProjectType>
+    <GenerateManifest>true</GenerateManifest>
+  </PropertyGroup>
+  
+  <PropertyGroup Condition="'$(Configuration)' != 'Release'">
+    <DisableZipRelease>true</DisableZipRelease>
+  </PropertyGroup>
+  
+</Project>
