@@ -1,0 +1,38 @@
+# .NET build output
+**/bin/
+**/obj/
+[Bb]uild/
+[Dd]ebug/
+[Rr]elease/
+artifacts/
+
+# NuGet packages produced locally
+**/packages/
+*.nupkg
+*.snupkg
+
+# User-specific project and IDE settings
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.DotSettings.user
+.idea/
+.vs/
+_ReSharper*/
+
+# Test results and coverage
+**/TestResults/
+coverage/
+*.coverage
+*.coveragexml
+
+# Temporary files
+*.tmp
+*.bak
+*~
+
+# Operating-system metadata
+.DS_Store
+Thumbs.db
+Desktop.ini
