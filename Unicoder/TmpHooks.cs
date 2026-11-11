@@ -40,7 +40,7 @@ internal static class TmpHooks
         Prepare(__instance, ref value);
     }
 
-    private static void SetTextPrefix(TMP_Text __instance, ref string text)
+    private static void SetTextPrefix(TMP_Text __instance, [HarmonyArgument(0)] ref string text)
     {
         Prepare(__instance, ref text);
     }
